@@ -1,15 +1,26 @@
 public class FizzBuzz {
 
     public String play(int adad) {
-        String result = String.valueOf(adad);
-        if (ayaBar_3_BakhshPazirHast(adad) && !ayaBar_5_BakhshPazirHast(adad)) {
-            result = "Fizz";
-        } else if (ayaBar_5_BakhshPazirHast(adad) && !ayaBar_3_BakhshPazirHast(adad)) {
-            result = "Buzz";
-        } else if (ayaBar_5_BakhshPazirHast(adad) && ayaBar_3_BakhshPazirHast(adad)) {
-            result = "FizzBuzz";
+//        String result = String.valueOf(adad);
+//        if (ayaBar_3_BakhshPazirHast(adad) && !ayaBar_5_BakhshPazirHast(adad)) {
+//            result = "Fizz";
+//        } else if (ayaBar_5_BakhshPazirHast(adad) && !ayaBar_3_BakhshPazirHast(adad)) {
+//            result = "Buzz";
+//        } else if (ayaBar_5_BakhshPazirHast(adad) && ayaBar_3_BakhshPazirHast(adad)) {
+//            result = "FizzBuzz";
+//        }
+//        return result;
+
+        if (adad % 3 == 0){
+            if (adad % 5 == 0){
+                return "FizzBuzz";
+            }
+            return "Fizz";
+        }else if (adad % 5 == 0){
+            return "Buzz";
         }
-        return result;
+        return String.valueOf(adad);
+
     }
 
     private boolean ayaBar_5_BakhshPazirHast(int adad) {
